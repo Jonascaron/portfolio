@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #222327;
+}
+@media (max-width: 35em){
+    .mobile-nav-toggle{
+        position: absolute;
+        z-index: 9999;
+        background-color: transparent;
+        background-image: url(image/icon-hamburger.svg);
+        background-repeat: no-repeat;
+        width: 2rem;
+        border: 0;
+        aspect-ratio: 1;
+        top: 2rem;
+        right: 2rem;
+    }
+}
