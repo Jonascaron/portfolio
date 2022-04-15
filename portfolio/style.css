@@ -8,6 +8,7 @@
 .primary-header {
     position: fixed;
     width: 100%;
+    padding: 15px 0;
     background: #222327;
 }
 
@@ -36,11 +37,9 @@
     color: rgb(6, 135, 255);;
     letter-spacing: 2.7px;
     text-decoration: none;
-}
-
-.primary-navigation a > span {
-    font-weight: 700;
-    margin-right: .5em;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
 }
 
 .mobile-nav-toggle {
