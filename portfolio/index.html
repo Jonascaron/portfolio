@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <script src="nav.js" defer></script>
     <link rel="stylesheet" href="style.css">
 
     <title>Portfolio van Jonas</title>
@@ -12,9 +12,9 @@
 <body>
     <header class="primary-header flex">
         <div class="logo">Portfolio</div>
-        <button aria-controls="primary-navigation" aria-expanded="false" class="mobile-nav-toggle"></button>
-        <nav></nav>
-            <ul id="primary-navigation" class="primary-navigation flex">
+        <button aria-controls="primary-navigation" aria-expanded="false" class="mobile-nav-toggle"><ion-icon name="menu" class="icon"></ion-icon></button>
+        <nav>
+            <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
                 <li class="list active">
                     <a href="#">
                         <span class="text">Home</span>
@@ -50,5 +50,7 @@
             </div>
         </div>
     </section>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
