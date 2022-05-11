@@ -8,10 +8,10 @@ navToggle.addEventListener("click", () => {
     if (visiblity === "false") {
         nav.setAttribute("data-visible", true);
         navToggle.setAttribute("aria-expanded", true);
-        icon.setAttribute("name", close)
+        icon.setAttribute("name", "close")
     } else {
         nav.setAttribute("data-visible", false);
         navToggle.setAttribute("aria-expanded", false);
-        icon.setAttribute("name", menu)
+        icon.setAttribute("name", "menu")
     }
 })
