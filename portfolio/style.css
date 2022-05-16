@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -13,6 +14,32 @@ body {
     gap: var(--gap, 1rem);
 }
 
+.max-width {
+    padding: 0 80px;
+}
+
+
+/****** text ******/
+.font-size-75px {font-size: 75px;}
+.font-size-40px {font-size: 40px;}
+.font-size-35px {font-size: 35px;}
+.font-size-27px {font-size: 27px;}
+
+.font-weight-bold {font-weight: bold;}
+
+.text-color-white {color: #ffffff;}
+.text-color-aqua {color: #00ffff;}
+.text-color-blue {color: #0066ff;}
+
+
+/***** colors *****/
+:root {
+    --clrWh: #ffffff;
+    --clrGb: #dcdcdc;
+    --clrAq: #00ffff;
+    --clrAqhover: #00b8b8;
+    --clrBl: #0066ff;
+}
 
 /* primary-header */
 .primary-header {
@@ -22,9 +49,6 @@ body {
 
 .logo {
     position: fixed;
-    font-size: 40px;
-    margin-left: 1em;
-    color: aqua;
 }
 
 .primary-navigation {
@@ -42,18 +66,17 @@ body {
 
 .primary-navigation a {
     text-decoration: none;
-    color: aqua;
     margin-right: 1em;
     margin-left: 1em;
 }
+
 .primary-navigation a:hover {
-    color: rgb(0, 184, 184);
+    color: var(--clrAqhover);
 }
 
 .primary-navigation a > span {
-    font-size: 17px;
+    font-size: 18px;
     font-weight: 700;
-    
 }
 
 .mobile-nav-toggle {
@@ -62,7 +85,6 @@ body {
 
 @media (max-width: 35em) {
     .mobile-nav-toggle {
-        color: aqua;
         font-size: 32px;
         position: fixed;
         display: flex;
@@ -79,7 +101,6 @@ body {
         width: 100%;
         flex-direction: column;
         padding: min(30vh, 10rem) 2em;
-        background-color:#464646;
         transform: translateX(100%);
         transition: transform 350ms ease-out;
     }
@@ -88,4 +109,40 @@ body {
     }
 }
 
-/* home */
+
+/****** home ******/
+@media (max-width: 947px) {
+    .home .home-content .text-2 {
+      font-size: 70px;
+    }
+    .home .home-content .text-3 {
+      font-size: 35px;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+      padding: 0 23px;
+    }
+    .home .home-content .text-2 {
+      font-size: 60px;
+    }
+    .home .home-content .text-3 {
+      font-size: 32px;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2 {
+      font-size: 50px;
+    }
+    .home .home-content .text-3 {
+      font-size: 27px;
+    }
+}
+
+@media (max-width: 991px) {
+    .max-width {
+      padding: 0 50px;
+    }
+}
