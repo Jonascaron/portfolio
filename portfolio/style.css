@@ -43,12 +43,15 @@ body {
 
 /* primary-header */
 .primary-header {
+    display: flex;
     justify-content: space-between;
     height: 50px;
 }
 
 .logo {
     position: fixed;
+    margin-top: 1em;
+    margin-left: 1em;
 }
 
 .primary-navigation {
@@ -111,6 +114,11 @@ body {
 
 
 /****** home ******/
+.home {
+    margin-top: 10em;
+    margin-bottom: 30em;
+}
+
 @media (max-width: 947px) {
     .home .home-content .text-2 {
       font-size: 70px;
@@ -145,4 +153,10 @@ body {
     .max-width {
       padding: 0 50px;
     }
+}
+
+
+/****** about ******/
+.about .title {
+    text-align: center;
 }

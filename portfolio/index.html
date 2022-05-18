@@ -16,7 +16,7 @@
 </head>
 <body>
     <header class="primary-header flex">
-        <div class="logo text-color-aqua font-weight-bold font-size-35px max-width" >Portfolio</div>
+        <div class="logo text-color-aqua font-weight-bold font-size-35px" >Portfolio</div>
         <button aria-controls="primary-navigation" aria-expanded="false" class="mobile-nav-toggle text-color-aqua"><ion-icon name="menu" class="icon"></ion-icon></button>
         <nav>
             <ul id="primary-navigation" data-visible="false" class="primary-navigation flex">
@@ -41,20 +41,29 @@
                     </a>
                 </li>
                 <li class="list">
-                    <a href="#" class="text-color-aqua" >
+                    <a href="#" class="text-color-aqua">
                         <span class="text">Contact</span>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
-    <section class="home">
+    <section class="home" id="home">
         <div class="max-width">
             <div class="home-content">
                 <p class="text-color-white font-size-27px ">Hello, my name is</p>
                 <p class="text-color-white font-size-75px font-weight-bold text-2">Jonas Caron</p>
-                <p class="text-color-white font-size-40px text-3">And I'm a <span class="text-color-blue">Developer</span></p>
+                <p class="text-color-white font-size-40px text-3">And I'm a <span class="text-color-aqua">Developer</span></p>
             </div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <p class="text-color-aqua font-size-40px title">About me</p>
+        <div class="about-content">
+            <p class="text-color-white">
+                Hello my name is Jonas Caron.<br>
+                
+            </p>
         </div>
     </section>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
